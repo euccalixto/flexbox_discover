@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .gallery{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gallery .photos{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    h2{
+      font:700 4rem sans-serif;
+    }
+
+    .photos img{
+      width: 20rem;
+    }
+
+    .photos .break{
+      flex-basis: 100%;
+    }
+
+    @media (max-width:800px) {
+      .gallery img{
+        width: 90%;
+      }
+    }
+
+    @media (max-width:1000px) {
+      .gallery .break{
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="gallery">
+    <h2>Gallery</h2>
+
+    <div class="photos">
+      <img src="https://source.unsplash.com/random">
+      <img src="https://source.unsplash.com/random">
+      <img src="https://source.unsplash.com/random">
+      <div class="break"></div>
+      <img src="https://source.unsplash.com/random">
+      <img src="https://source.unsplash.com/random">
+      <img src="https://source.unsplash.com/random">
+      <div class="break"></div>
+      <img src="https://source.unsplash.com/random">
+      <img src="https://source.unsplash.com/random">
+      <img src="https://source.unsplash.com/random">
+    </div>
+    
+  </div>
+</body>
+</html>

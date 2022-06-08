@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body > div{
+      display: flex;
+      gap: 1rem;
+      height: 100vh;
+      padding: 4rem;
+    }
+
+    body > div > div{
+      border: 1px solid #c4c4c4;
+    }
+
+    .one{
+      background-color: #e4e4e4;
+      flex-basis: 25%;
+    }
+
+    .two{
+      background-color: #fff;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="one"></div>
+    <div class="two"></div>
+  </div>
+</body>
+</html>
