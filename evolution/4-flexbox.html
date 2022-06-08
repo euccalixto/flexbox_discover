@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    body > div{
+      width: 50%;
+      justify-content: space-between;
+      display: flex;
+      height: 20rem;
+      border: 1px solid #f00;
+    }
+    .item{
+      border: 1px solid #444;
+      flex: 1;
+    }
+    .item:nth-of-type(1){
+      order: 1;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="item">
+      A
+    </div>
+
+    <div class="item">
+      B
+    </div>
+
+    <div class="item">
+      C
+    </div>
+  </div>
+</body>
+</html>
